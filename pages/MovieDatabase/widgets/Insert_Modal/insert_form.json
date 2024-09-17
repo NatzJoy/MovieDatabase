@@ -1,8 +1,10 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
+  "backgroundColor": "#f3e8ff",
+  "borderColor": "#7e22ce",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "5",
   "bottomRow": 81,
   "boxShadow": "none",
   "childStylesheet": {
@@ -101,16 +103,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "submitButtonStyles.borderRadius"
     },
     {
       "key": "resetButtonStyles.borderRadius"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
     },
     {
       "key": "schema.__root_schema__.children.title.defaultValue"
@@ -384,7 +380,7 @@
   "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#7e22ce",
     "buttonVariant": "SECONDARY"
   },
   "rightColumn": 64,
@@ -458,7 +454,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "budget",
           "position": 9,
-          "sourceData": 6000000
+          "sourceData": 4000000
         },
         "cast": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -543,7 +539,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "genres",
           "position": 18,
-          "sourceData": "Drama, Crime"
+          "sourceData": "Comedy"
         },
         "homepage": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -565,7 +561,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "homepage",
           "position": 10,
-          "sourceData": "http://www.thegodfather.com/"
+          "sourceData": "https://www.miramax.com/movie/four-rooms/"
         },
         "imdb_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -587,7 +583,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "imdb_id",
           "position": 11,
-          "sourceData": "tt0068646"
+          "sourceData": "tt0113101"
         },
         "keywords": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -651,7 +647,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "original_title",
           "position": 13,
-          "sourceData": "The Godfather"
+          "sourceData": "Four Rooms"
         },
         "overview": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -673,7 +669,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "overview",
           "position": 14,
-          "sourceData": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."
+          "sourceData": "It's Ted the Bellhop's first night on the job...and the hotel's very unusual guests are about to place him in some outrageous predicaments. It seems that this evening's room service is serving up one unbelievable happening after another."
         },
         "popularity": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -695,7 +691,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "popularity",
           "position": 15,
-          "sourceData": 158.448
+          "sourceData": 15.295
         },
         "poster_path": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -738,7 +734,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "production_companies",
           "position": 19,
-          "sourceData": "Paramount, Alfran Productions"
+          "sourceData": "Miramax, A Band Apart"
         },
         "production_countries": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -786,7 +782,7 @@
           "originalIdentifier": "release_date",
           "position": 4,
           "shortcuts": false,
-          "sourceData": "1972-03-14",
+          "sourceData": "1995-12-09",
           "timePrecision": "minute"
         },
         "revenue": {
@@ -830,7 +826,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "runtime",
           "position": 6,
-          "sourceData": 175
+          "sourceData": 98
         },
         "spoken_languages": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -852,7 +848,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "spoken_languages",
           "position": 21,
-          "sourceData": "English, Italian, Latin"
+          "sourceData": "English"
         },
         "status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -896,7 +892,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tagline",
           "position": 17,
-          "sourceData": "An offer you can't refuse."
+          "sourceData": "Twelve outrageous guests. Four scandalous requests. And one lone bellhop, in his first day on the job, who's in for the wildest New year's Eve of his life."
         },
         "title": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -918,7 +914,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "title",
           "position": 0,
-          "sourceData": "The Godfather"
+          "sourceData": "Four Rooms"
         },
         "vote_average": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -940,7 +936,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "vote_average",
           "position": 1,
-          "sourceData": 8.707
+          "sourceData": 5.784
         },
         "vote_count": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -962,7 +958,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "vote_count",
           "position": 2,
-          "sourceData": 18677
+          "sourceData": 2436
         }
       },
       "dataType": "object",
@@ -992,7 +988,7 @@
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#7e22ce",
     "buttonVariant": "PRIMARY"
   },
   "title": "Insert Row",

@@ -18,8 +18,16 @@
   "icon": "money",
   "pages": [
     {
+      "id": "Table Lookup",
+      "isDefault": false
+    },
+    {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "MovieDatabase",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

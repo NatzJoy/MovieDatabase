@@ -1,33 +1,34 @@
 {
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 21,
   "boxShadow": "none",
   "buttonColor": "#7e22ce",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "TERTIARY",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconName": "add",
+  "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 55,
-  "onClick": "{{showModal('Insert_Modal')}}",
-  "parentColumnSpace": 12.0703125,
-  "parentId": "59rw5mx0bq",
-  "parentRowSpace": 10,
-  "rightColumn": 59,
-  "topRow": 1,
-  "type": "ICON_BUTTON_WIDGET",
+  "leftColumn": 34,
+  "onClick": "{{closeModal('Delete_Modal')}}",
+  "parentId": "zi8fjakv8o",
+  "recaptchaType": "V3",
+  "rightColumn": 46,
+  "text": "Cancel",
+  "topRow": 17,
+  "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "nh3cu4lb1g",
-  "widgetName": "add_btn"
+  "widgetId": "lryg8kw537",
+  "widgetName": "Button1"
 }
