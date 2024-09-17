@@ -13,9 +13,9 @@
   },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
-  "color": "#FFEFDB",
+  "color": "#F1DEFF",
   "evaluationVersion": 2,
-  "icon": "money",
+  "icon": "server",
   "pages": [
     {
       "id": "Table Lookup",
