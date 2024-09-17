@@ -22,7 +22,7 @@
       "name": "Movies",
       "pluginId": "postgres-plugin"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "fetchMovies",
     "pageId": "Table Lookup",
     "userSetOnLoad": false
