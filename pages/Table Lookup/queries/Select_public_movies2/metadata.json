@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66e988a3754dda176739c58b_57716fb3-1f78-46bd-9f18-ba195d4e9c48",
-  "id": "Table Lookup_searchGenres",
+  "gitSyncId": "66e988a3754dda176739c58b_27c5e2e4-c960-43ee-be89-a913a60ef0c6",
+  "id": "Table Lookup_Select_public_movies2",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -10,7 +10,7 @@
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -23,8 +23,8 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "searchGenres",
+    "executeOnLoad": true,
+    "name": "Select_public_movies2",
     "pageId": "Table Lookup",
     "userSetOnLoad": false
   }

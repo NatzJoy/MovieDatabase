@@ -1,0 +1,3 @@
+SELECT DISTINCT unnest(string_to_array("genres", ',')) AS genre
+FROM "movies"
+ORDER BY genre ASC;
