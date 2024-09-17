@@ -4,22 +4,34 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultOptionValue": "ACTION",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    }
-  ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
+    },
     {
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilterUpdate"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -29,7 +41,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "Search Genre",
+  "labelText": "Search Genres",
   "labelTextColor": "#7e22ce",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
@@ -42,17 +54,21 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "onDropdownClose": "",
+  "onDropdownOpen": "",
+  "onFilterUpdate": "",
+  "onOptionChange": "{{searchGenres.run([{\"label\": \"Action\", \"value\": \"Action\"},\n  {\"label\": \"Comedy\", \"value\": \"Comedy\"},\n  {\"label\": \"Drama\", \"value\": \"Drama\"},\n  {\"label\": \"Thriller\", \"value\": \"Thriller\"}\n]);}}",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 7.17822265625,
   "parentId": "t7mwekrbd1",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"name\": \"Action\",\n    \"code\": \"ACTION\"\n  },\n  {\n    \"name\": \"Drama\",\n    \"code\": \"DRAMA\"\n  },\n  {\n    \"name\": \"Comedy\",\n    \"code\": \"COMEDY\"\n  },\n\t{\n    \"name\": \"Science Fiction\",\n    \"code\": \"SCIENCE FICTION\"\n  },\n\t{\n    \"name\": \"Adventure\",\n    \"code\": \"ADVENTURE\"\n  }\n]",
+  "sourceData": "{{searchGenres.data.map( (obj) =>{ return  {'label': obj.genre, 'value': obj.genre } })}}",
   "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,

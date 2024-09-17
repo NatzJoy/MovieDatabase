@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66e988a3754dda176739c58b_589e5fcb-4b7e-44b5-9233-b3dc81ddb1d3",
-  "id": "Table Lookup_Total_record_public_movies1",
+  "gitSyncId": "66e988a3754dda176739c58b_57716fb3-1f78-46bd-9f18-ba195d4e9c48",
+  "id": "Table Lookup_searchGenres",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"movies\" LIMIT 10;",
+      "body": "SELECT DISTINCT unnest(string_to_array(\"genres\", ',')) AS genre\nFROM \"movies\"\nORDER BY genre ASC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,13 +22,9 @@
       "name": "Movies",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "Total_record_public_movies1",
+    "name": "searchGenres",
     "pageId": "Table Lookup",
     "userSetOnLoad": false
   }
