@@ -52,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"name\": \"Action\",\n    \"code\": \"ACTION\"\n  },\n  {\n    \"name\": \"Drama\",\n    \"code\": \"DRAMA\"\n  },\n  {\n    \"name\": \"Comedy\",\n    \"code\": \"COMEDY\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Action\",\n    \"code\": \"ACTION\"\n  },\n  {\n    \"name\": \"Drama\",\n    \"code\": \"DRAMA\"\n  },\n  {\n    \"name\": \"Comedy\",\n    \"code\": \"COMEDY\"\n  },\n\t{\n    \"name\": \"Science Fiction\",\n    \"code\": \"SCIENCE FICTION\"\n  },\n\t{\n    \"name\": \"Adventure\",\n    \"code\": \"ADVENTURE\"\n  }\n]",
   "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,
